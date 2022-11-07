@@ -1,3 +1,4 @@
+# este listado son archivos que no se van a subir a git
 .vscode
 .history
 .DS_Store
