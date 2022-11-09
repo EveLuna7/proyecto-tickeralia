@@ -1,4 +1,4 @@
-/* Estilos tickeralia v1
+/* Estilos tickeralia v2
 Evelyn Alcantara Cardenas*/
 
 * {
@@ -23,40 +23,15 @@ p {
     font-size: 13px;
 }
 
-.menu ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    text-align: right;
+
+.navbar-nav li {
+    padding: 10px 20px;
 }
 
-.menu li {
-    display: inline-block;
-    background-color: #ffffff;
-    margin: 0px -2px;
-    color: #000;
-    padding: 20px;
-}
-
-.menu li a {
+.navbar-nav  li a {
     color: #7743B9;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-}
-
-.menu__logo {
-    float: left;
-    margin-top: 18px;
-}
-
-.menu__logo a,
-.menu__logo a:hover {
-    color: #ffffff !important;
-    text-decoration: none;
-}
-
-.menu__logo img {
-    width: 60%;
 }
 
 .menu__btn {
