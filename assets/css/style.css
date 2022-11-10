@@ -17,29 +17,23 @@ p {
 }
 
 /* Navegacion */
-.menu {
-    background-color: #ffffff;
-    margin-bottom: 0px;
+.navbar {
+    background-color: #ffffffae;
     font-size: 13px;
 }
 
-
 .navbar-nav li {
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .navbar-nav  li a {
-    color: #7743B9;
+    color: #4743b9;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 
-.menu__btn {
-    display: inline-block;
-}
-
 .btn__inside {
-    background-color: #7743B9;
+    background-color: #4743b9;
     border: none;
     border-radius: 8px;
     color: #ffffff;
@@ -51,9 +45,9 @@ p {
 
 .btn__outside {
     background-color: #ffffff;
-    border: 2px solid #7743B9;
+    border: 2px solid #4743b9;
     border-radius: 8px;
-    color: #7743B9;
+    color: #4743b9;
     padding: 8px 30px;
     text-align: center;
     text-decoration: none;

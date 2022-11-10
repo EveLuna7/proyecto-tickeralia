@@ -28,8 +28,8 @@
 
     <!--Navegación-->
     <header>
-        <nav class="navbar navbar-expand-md menu">
-            <div class="container-lg">
+        <nav class="navbar navbar-expand-md fixed-top menu">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="./assets/img/logo_tcrkl.svg" alt="Tickeralia logo" width="60%">
                 </a>
@@ -38,32 +38,27 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Eventos</a>
+                        <a class="nav-link" href="./pages/eventos.html">Eventos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Merchandise</a>
+                        <a class="nav-link" href="./pages/mercancia.html">Merchandise</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
                       </li>
                     </ul>
-                  </div>
 
-                <!-- <ul id="menu">
-                    <li><a href="./pages/eventos.html">Eventos</a></li>
-                    <li><a href="./pages/mercancia.html">Merchandise</a></li>
-                    <li><a href="./pages/contacto.html">Contáctanos</a></li>
-                    <li><a href="./pages/ayuda.html">Ayuda</a></li>
-                    <li><button type="button" class="btn__outside">Ingresar</button></li>
-                    <li><button type="button" class="btn__inside">Regístrate</button></li>
-                </ul> -->
-
+                    <form class="d-flex">
+                        <button class="btn__outside mx-3" type="button">Ingresar</button>
+                        <button class="btn__inside mx-3" type="button">Regístrate</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
