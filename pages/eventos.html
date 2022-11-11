@@ -28,10 +28,13 @@
 
     <!--Navegación-->
     <header>
-        <nav class="navbar navbar-expand-md fixed-top menu">
+        <nav class="navbar navbar-expand-lg fixed-top menu">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand desk" href="../index.html">
                     <img src="../assets/img/logo_tcrkl.svg" alt="Tickeralia logo" width="60%">
+                </a>
+                <a class="navbar-brand mobile" href="../index.html">
+                    <img src="../assets/img/logo_tcrkl_color.svg" alt="Tickeralia logo" width="60%">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,105 +69,310 @@
 
 
     <main>
+
+        <section class="search__container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-8 col-sm-8">
+                    <div class="search__bar">
+                        <p class="search__title">
+                            Busca un evento en Tickeralia
+                        </p>
+                        <input class="search__input" type="text" placeholder="Por Artista, evento o fecha">
+                    </div>
+                    
+                    <div class="credits__container">
+                        <p class="credits__text">Limpiar la busqueda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- cards -->
-        <section>
-            <article class="featured">
-
-                <div class="card__container">
-                    <div class="card__item">
-                        <img src="../assets/img/costa-milano-2da-edicion-2022.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+        <section class="container-fluid featured">
+            <div class="row justify-content-center card-group card__featured">
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/insite-en-foro-indie-rocks-174953-rec.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
                         </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/inferno-2210-en-club-the-house.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/la-sole-en-centro-arte-alameda.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/los-romanticos-de-zacatecas-en-pachuca.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$750.00 MXN</small>
                         </div>
                     </div>
                 </div>
-
-                <div class="card__container">
-                    <div class="card__item">
-                        <img src="../assets/img/moonage-daydream-cine-arte-vina-del-mar.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/carnaval-de-bahidora-2023-129038-rec_1.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
                         </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/sara-hebe-en-tulum-noche-de-brujas.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/sippaint-lady-plant.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/the-ganjas-the-slow-voyage.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$900.00 MXN</small>
                         </div>
                     </div>
                 </div>
-
-                <div class="card__container">
-                    <div class="card__item">
-                        <img src="../assets/img/un-leon-marinero-en-vivo-desde-aguascalientes.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/black-midi-en-fronton-170143-rec.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
                         </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/caligaris-en-guanajuato.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/charles-ans-sofia-stainer-en-teatro-angela-peralta.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                        </div>
-                    </div>
-                    <div class="card__item">
-                        <img src="../assets/img/mkb-2022.jpg" alt="Avatar" style="width:100%">
-                        <div class="card_container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$520.00 MXN</small>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/the-funerals-en-foro-indie-rocks-136382-rec.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>  
+            </div>
 
+            <div class="row justify-content-center card-group card__featured">
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/costa-milano-2da-edicion-2022.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $750.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/inferno-2210-en-club-the-house.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$900.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/la-sole-en-centro-arte-alameda.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/los-romanticos-de-zacatecas-en-pachuca.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>  
+            </div>
 
-            </article>
+            <div class="row justify-content-center card-group card__featured">
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/moonage-daydream-cine-arte-vina-del-mar.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $750.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/sara-hebe-en-tulum-noche-de-brujas.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$900.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/sippaint-lady-plant.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/the-ganjas-the-slow-voyage.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="row justify-content-center card-group card__featured">
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/un-leon-marinero-en-vivo-desde-aguascalientes.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $750.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/caligaris-en-guanajuato.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price">$900.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/charles-ans-sofia-stainer-en-teatro-angela-peralta.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="../assets/img/mkb-2022.jpg" alt="Avatar">
+                        <div class="card_container__info">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-footer">
+                            <small class="product_price"> $520.00 MXN</small>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </section>
         <!-- cards -->
 
