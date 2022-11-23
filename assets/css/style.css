@@ -8,7 +8,7 @@ Evelyn Alcantara Cardenas*/
 }
 
 body {
-    background-color: #efefef;
+    background-color: #f5f5f5 !important;
 }
 
 
@@ -214,52 +214,38 @@ p {
 
 /* ------------------MERCANCIA HTML----------------- */
 
+.merch__items{
+    margin-top: 8%;
+}
+
 .merch__card {
-    height: 327px;
-    width: 654px;
-    margin: 50px auto;
-    border-radius: 7px 7px 7px 7px;
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    background-color: #ffffff;
+    margin: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 11px 11px 10px 0px rgb(0 0 0 / 15%);
 }
   
   .product__img {
-    float: left;
-    height: 327px;
-    width: 327px;
-  }
-  
-  .product__img img {
-    border-radius: 7px 0 0 7px;
-    width: 100%;
+    align-self: center;
   }
   
   .product__info {
-    float: left;
-    height: 327px;
-    width: 327px;
-    border-radius: 0 7px 10px 7px;
-    background-color: #ffffff;
+    display: inline-block;
+    padding: 30px 15px;
   }
   
   .product__text {
-    height: 240px;
-    width: 327px;
+    padding-bottom: 20px;
   }
   
   .product__text h2 {
-    margin: 0 0 0 38px;
-    padding-top: 52px;
+    font-family: 'Bodoni Moda', serif;
     font-size: 34px;
     color: #3a3a3a;
   }
   
-  .product__text h2,
-  .product-price-btn p {
-    font-family: 'Bodoni Moda', serif;
-  }
-  
   .product__text h3 {
-    padding: 0 0 30px 38px;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -269,46 +255,37 @@ p {
   }
   
   .product__text p {
-    height: 125px;
-    margin: 0 0 0 38px;
     line-height: 1.7em;
     font-size: 15px;
     font-weight: 400;
-    overflow: hidden;
   }
   
   .product-price-btn {
-    margin-top: 17px;
-    position: relative;
+    display: flex;
+    margin-top: 20px;
   }
   
   .product-price-btn p {
-    display: inline-block;
-    position: absolute;
-    margin: 0 0 0 38px;
+    font-family: 'Bodoni Moda', serif;
     font-size: 28px;
     font-weight: 800;
   }
   
   .product-price-btn button {
-    float: right;
-    height: 50px;
-    width: 150px;
-    margin: 0 40px 0 15px;
-    box-sizing: border-box;
-    border: 2px solid #7743B9;
-    border-radius: 60px;
-    font-size: 14px;
+    padding: 10px 30px;
+    border: 2px solid #4743b9;
+    border-radius: 30px;
+    font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #7743B9;
+    color: #4743b9;
     background-color: #ffffff;
   }
   
   .product-price-btn button:hover {
     color: #ffffff;
-    background-color: #7743B9;
+    background-color: #4743b9;
   }
 /* ------------------MERCANCIA HTML----------------- */
 
