@@ -1,0 +1,16 @@
+// variables
+@import './variables';
+
+// base
+@import './base/reset';
+@import './base/base';
+
+// layout
+@import './layout/navegation';
+@import './layout/_footer';
+
+// components
+@import './components/buttons';
+
+// views
+@import './views/home'

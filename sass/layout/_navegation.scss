@@ -1,0 +1,23 @@
+// nav
+
+.navbar {
+    background-color: #0d0d0dc4;
+    font-size: 14px;
+}
+
+.navbar-nav{
+    li {
+        padding: 0 20px;
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: $font-montserrat;
+            &:hover {
+            color: $purple-light !important;
+            transition: all 1s ease-out;
+            }
+        }
+        
+
+    }
+}

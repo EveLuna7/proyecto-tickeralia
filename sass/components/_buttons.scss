@@ -1,0 +1,21 @@
+.btn__inside {
+    background-color: $purple-base;
+    border: none;
+    border-radius: 20px;
+    color: $white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn__outside {
+    background-color: $white;
+    border: 2px solid $purple-base;
+    border-radius: 20px;
+    color: $purple-base;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+}
