@@ -296,6 +296,7 @@ p {
 
 /* ------------------CONTACTO HTML----------------- */
 .form{
+    margin-top: 10%;
     display: flex;
     font-family: 'Montserrat', sans-serif;
 }
@@ -351,6 +352,9 @@ p {
 
 
 /* ------------------AYUDA HTML----------------- */
+.help{
+    margin-top: 10%;
+}
 
 .help__wrapper {
     max-width: 600px;
@@ -447,7 +451,7 @@ footer {
 }
 
 .footer__tick {
-    background-color: #1a151c;
+    background-color: #1b1b1b;
     text-align: center;
 }
 
