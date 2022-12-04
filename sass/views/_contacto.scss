@@ -1,0 +1,36 @@
+/* ------------------CONTACTO HTML----------------- */
+.form{
+    margin-top: 10%;
+    font-family: $font-montserrat;
+}
+
+.form__header h1{
+    padding-bottom: 20px;
+    color: $purple-base;
+}
+
+.form__info{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    p{
+        margin: 18px 0;
+        text-align: right;
+        font-size: 12px;
+    }
+    a{
+        color: #666666;
+    }
+}
+
+.form__field {
+    font-family: $font-montserrat;
+    height: 46px;
+    padding: 0 16px;
+    border: solid $white;
+    border-radius: 4px;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+

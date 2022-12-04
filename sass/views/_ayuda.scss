@@ -1,0 +1,83 @@
+/* ------------------AYUDA HTML----------------- */
+.help{
+    margin-top: 10%;
+}
+
+.help__wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 10vh auto;
+}
+
+.help__wrapper h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.help__wrapper input {
+    display: none;
+}
+
+.help__wrapper label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #7743B9;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.help__wrapper label div:first-child {
+    width: 100%;
+    line-height: 45px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.help__cross{
+    margin-right:15px;
+    margin-top:3px;
+}
+
+.help__cross:before,.help__cross:after {
+    content: '';
+    border-top: 2px solid #4c4c4c;
+    width: 15px;
+    display: block;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.help__cross:after {
+    transform: rotate(90deg);
+    margin-top: -2px;
+}
+
+.content {
+    box-sizing: border-box;
+    margin: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, .5s;
+}
+.content p{
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+input:checked ~ .content {
+    max-height: 400px;
+    transition: max-height, 1s;
+}
+
+input:checked ~ label .help__cross:before {
+    transform: rotate(180deg);
+}
+
+input:checked ~ label .help__cross:after {
+    transform: rotate(0deg);
+}

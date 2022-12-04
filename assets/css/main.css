@@ -13,6 +13,36 @@ p {
 .mobile {
   display: none; }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .desk {
+    display: none; }
+  .mobile {
+    display: inline-block; }
+  .navbar {
+    background-color: #ffffffc4; }
+  .navbar-nav li a {
+    color: #4743b9;
+    text-align: end;
+    font-weight: 500; }
+  form {
+    justify-content: flex-end; }
+  .carousel {
+    margin-top: 58px; }
+  .search__container {
+    margin-top: 25%; }
+  footer {
+    padding: 3rem 0 2rem 0; }
+  .footer__tick {
+    text-align: left; }
+  .footer__heading img {
+    width: 45%; }
+  .footer__menu ul {
+    list-style: none;
+    display: inline-block; }
+  .footer__rrss img {
+    width: 20px;
+    margin: 15px; } }
+
 .navbar {
   background-color: #0d0d0dc4;
   font-size: 14px; }
@@ -87,7 +117,7 @@ footer {
   text-decoration: none;
   font-size: 13px; }
 
-/* section featured */
+/* HOME section featured */
 .featured {
   margin: 3rem 0; }
 
@@ -124,3 +154,237 @@ footer {
 
 .card-footer {
   font-size: 0.8em !important; }
+
+/* ------------------ EVENTOS ----------------- */
+/* barra de busqueda */
+.search__container {
+  margin-top: 10%; }
+
+.search__title {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  color: #4743b9;
+  padding-bottom: 15px; }
+
+.search__input {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #a7a7a7;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; }
+
+.search__input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.search__input:hover,
+.search__input:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center; }
+
+.card_container__info {
+  padding: 15px; }
+
+.card_container__info h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px; }
+
+.list-group-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px; }
+
+.product_price {
+  color: #4743b9;
+  font-weight: 800; }
+
+.credits__container {
+  margin-top: 24px; }
+
+.credits__text {
+  color: #ff8b88;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px; }
+
+/* ------------------MERCANCIA HTML----------------- */
+.merch__items {
+  margin-top: 10%; }
+
+.merch__card {
+  display: flex;
+  background-color: #ffffff;
+  margin: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 11px 11px 10px 0px #00000041; }
+
+.product__img {
+  align-self: center; }
+
+.product__info {
+  display: inline-block;
+  padding: 30px 15px; }
+
+.product__text {
+  padding-bottom: 20px; }
+
+.product__text h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 34px;
+  color: #3a3a3a; }
+
+.product__text h3 {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c7c7c7;
+  letter-spacing: 0.2em; }
+
+.product__text p {
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: 400; }
+
+.product-price-btn {
+  display: flex;
+  margin-top: 20px; }
+
+.product-price-btn p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 28px;
+  font-weight: 800; }
+
+.product-price-btn button {
+  padding: 10px 30px;
+  border: 2px solid #4743b9;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4743b9;
+  background-color: #ffffff; }
+
+.product-price-btn button:hover {
+  color: #ffffff;
+  background-color: #4743b9; }
+
+/* ------------------CONTACTO HTML----------------- */
+.form {
+  margin-top: 10%;
+  font-family: "Montserrat", sans-serif; }
+
+.form__header h1 {
+  padding-bottom: 20px;
+  color: #4743b9; }
+
+.form__info {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0; }
+  .form__info p {
+    margin: 18px 0;
+    text-align: right;
+    font-size: 12px; }
+  .form__info a {
+    color: #666666; }
+
+.form__field {
+  font-family: "Montserrat", sans-serif;
+  height: 46px;
+  padding: 0 16px;
+  border: solid #ffffff;
+  border-radius: 4px;
+  transition: 0.2s;
+  margin-top: 20px; }
+
+/* ------------------AYUDA HTML----------------- */
+.help {
+  margin-top: 10%; }
+
+.help__wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 10vh auto; }
+
+.help__wrapper h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.help__wrapper input {
+  display: none; }
+
+.help__wrapper label {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid #7743B9;
+  border-radius: 10px;
+  user-select: none; }
+
+.help__wrapper label div:first-child {
+  width: 100%;
+  line-height: 45px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
+
+.help__cross {
+  margin-right: 15px;
+  margin-top: 3px; }
+
+.help__cross:before, .help__cross:after {
+  content: '';
+  border-top: 2px solid #4c4c4c;
+  width: 15px;
+  display: block;
+  margin-top: 18px;
+  transition: 0.3s; }
+
+.help__cross:after {
+  transform: rotate(90deg);
+  margin-top: -2px; }
+
+.content {
+  box-sizing: border-box;
+  margin: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, .5s; }
+
+.content p {
+  line-height: 1.5;
+  font-weight: 300; }
+
+input:checked ~ .content {
+  max-height: 400px;
+  transition: max-height, 1s; }
+
+input:checked ~ label .help__cross:before {
+  transform: rotate(180deg); }
+
+input:checked ~ label .help__cross:after {
+  transform: rotate(0deg); }
