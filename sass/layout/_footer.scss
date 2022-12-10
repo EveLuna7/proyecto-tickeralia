@@ -46,3 +46,25 @@ footer {
     font-size: 14px;
     font-weight: 200;
 }
+
+
+@media only screen and (max-width: $mediaTablet-768) {
+    footer {
+        padding: 3rem 0 2rem 0;
+    }
+    .footer__tick {
+        text-align: left;
+    }
+    .footer__heading img{
+        width: 45%;
+    }
+    .footer__menu ul{
+        list-style:none;
+        display: inline-block;
+    }
+    .footer__rrss img{
+        width: 20px;
+        margin: 15px;
+    }
+    
+}

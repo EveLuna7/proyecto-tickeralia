@@ -13,39 +13,24 @@ p {
 .mobile {
   display: none; }
 
-@media (min-width: 320px) and (max-width: 768px) {
+.desk {
+  display: block; }
+
+@media screen and (max-width: 768px) {
   .desk {
     display: none; }
   .mobile {
-    display: inline-block; }
-  .navbar {
-    background-color: #ffffffc4; }
-  .navbar-nav li a {
-    color: #4743b9;
-    text-align: end;
-    font-weight: 500; }
-  form {
-    justify-content: flex-end; }
+    display: block; }
   .carousel {
     margin-top: 58px; }
   .search__container {
-    margin-top: 25%; }
-  footer {
-    padding: 3rem 0 2rem 0; }
-  .footer__tick {
-    text-align: left; }
-  .footer__heading img {
-    width: 45%; }
-  .footer__menu ul {
-    list-style: none;
-    display: inline-block; }
-  .footer__rrss img {
-    width: 20px;
-    margin: 15px; } }
+    margin-top: 25%; } }
 
 .navbar {
   background-color: #0d0d0dc4;
   font-size: 14px; }
+  .navbar img {
+    width: 50%; }
 
 .navbar-nav li {
   padding: 0 20px; }
@@ -54,8 +39,22 @@ p {
     text-decoration: none;
     font-family: "Montserrat", sans-serif; }
     .navbar-nav li a:hover {
-      color: #605bdf !important;
+      color: #726eeb !important;
       transition: all 1s ease-out; }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #ffffffc4; }
+  .navbar-nav li a {
+    color: #4743b9;
+    text-align: end;
+    font-weight: 500; } }
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    background-color: #ffffffc4; }
+    .navbar img {
+      width: 40%; } }
 
 /* footer */
 footer {
@@ -97,108 +96,127 @@ footer {
   font-size: 14px;
   font-weight: 200; }
 
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 3rem 0 2rem 0; }
+  .footer__tick {
+    text-align: left; }
+  .footer__heading img {
+    width: 45%; }
+  .footer__menu ul {
+    list-style: none;
+    display: inline-block; }
+  .footer__rrss img {
+    width: 20px;
+    margin: 15px; } }
+
 .btn__inside {
   background-color: #4743b9;
-  border: none;
+  border: 1px solid #4743b9;
   border-radius: 20px;
   color: #ffffff;
-  padding: 10px 30px;
+  padding: 8px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 13px; }
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500; }
+  .btn__inside:hover {
+    color: #ffffff;
+    background-color: #726eeb;
+    border: 1px solid #726eeb; }
 
 .btn__outside {
   background-color: #ffffff;
-  border: 2px solid #4743b9;
+  border: 1px solid #4743b9;
   border-radius: 20px;
   color: #4743b9;
   padding: 8px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 13px; }
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500; }
+  .btn__outside:hover {
+    color: #ffffff;
+    background-color: #4743b9; }
 
 /* HOME section featured */
 .featured {
   margin: 3rem 0; }
-
-.featured__title h1 {
-  font-family: "Bodoni Moda", serif;
-  font-size: 3em;
-  text-align: center; }
-
-.featured__description {
-  color: #a7a7a7 !important;
-  font-size: 19px;
-  line-height: 1.3;
-  text-align: center; }
-
-.card__featured {
-  padding: 3% 0; }
+  .featured__title {
+    font-family: "Bodoni Moda", serif;
+    font-size: 3em;
+    text-align: center; }
+  .featured__description {
+    color: #a7a7a7 !important;
+    font-size: 19px;
+    line-height: 1.3;
+    text-align: center; }
 
 .card {
   border: none !important;
-  margin: 20px 0;
+  margin: 50px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s; }
-
-.card:hover {
-  box-shadow: 6px 6px 16px 0 #1414147d; }
-
-.card_container {
-  padding: 30px 15px; }
-
-.card_container h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 20px; }
+  .card:hover {
+    box-shadow: 6px 6px 16px 0 #1414147d; }
+  .card__container {
+    padding: 30px 15px; }
+    .card__container h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 20px; }
 
 .card-footer {
   font-size: 0.8em !important; }
 
 /* ------------------ EVENTOS ----------------- */
 /* barra de busqueda */
-.search__container {
-  margin-top: 10%; }
-
-.search__title {
-  font-size: 22px;
-  font-weight: 900;
-  text-align: center;
-  color: #4743b9;
-  padding-bottom: 15px; }
+.search {
+  margin-top: 10%;
+  text-align: center; }
+  .search__bar h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #4743b9;
+    padding-bottom: 15px; }
+  .search a {
+    color: #ff8b88;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 4; }
+    .search a:hover {
+      color: #a7a7a7; }
 
 .search__input {
   width: 100%;
   padding: 12px 24px;
-  background-color: transparent;
-  transition: transform 250ms ease-in-out;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
-  color: #a7a7a7;
+  color: #3a3a3a;
   background-color: transparent;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: 95% center;
   border-radius: 50px;
-  border: 1px solid #575756;
+  border: 1px solid #6c6c6c;
   transition: all 250ms ease-in-out;
   backface-visibility: hidden;
   transform-style: preserve-3d; }
-
-.search__input::placeholder {
-  color: rgba(87, 87, 86, 0.8);
-  text-transform: uppercase;
-  letter-spacing: 1.5px; }
-
-.search__input:hover,
-.search__input:focus {
-  padding: 12px 0;
-  outline: 0;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #575756;
-  border-radius: 0;
-  background-position: 100% center; }
+  .search__input::placeholder {
+    color: #a7a7a7;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+  .search__input:hover, .search__input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #726eeb;
+    border-radius: 0;
+    background-position: 100% center; }
 
 .card_container__info {
   padding: 15px; }
@@ -216,116 +234,78 @@ footer {
   color: #4743b9;
   font-weight: 800; }
 
-.credits__container {
-  margin-top: 24px; }
-
-.credits__text {
-  color: #ff8b88;
-  text-align: center;
-  font-size: 13px;
-  line-height: 18px; }
+@media screen and (max-width: 768px) {
+  .search {
+    margin-top: 20%; } }
 
 /* ------------------MERCANCIA HTML----------------- */
 .merch__items {
   margin-top: 10%; }
 
-.merch__card {
-  display: flex;
+.merchcard {
   background-color: #ffffff;
   margin: 50px 20px;
-  border-radius: 10px;
+  border-radius: 15px;
+  text-align: center;
   box-shadow: 11px 11px 10px 0px #00000041; }
+  .merchcard__img img {
+    width: 60%; }
 
-.product__img {
-  align-self: center; }
-
-.product__info {
-  display: inline-block;
+.product {
   padding: 30px 15px; }
+  .product__text {
+    padding-bottom: 20px; }
+    .product__text h2 {
+      font-size: 30px;
+      color: #111111;
+      font-weight: 200; }
+    .product__text h3 {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #a7a7a7;
+      letter-spacing: 0.2em; }
+    .product__text p {
+      font-family: "Bodoni Moda", serif;
+      font-size: 26px;
+      font-weight: 800; }
+  .product__price {
+    padding-top: 15px; }
 
-.product__text {
-  padding-bottom: 20px; }
-
-.product__text h2 {
-  font-family: "Bodoni Moda", serif;
-  font-size: 34px;
-  color: #3a3a3a; }
-
-.product__text h3 {
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #c7c7c7;
-  letter-spacing: 0.2em; }
-
-.product__text p {
-  line-height: 1.7em;
-  font-size: 15px;
-  font-weight: 400; }
-
-.product-price-btn {
-  display: flex;
-  margin-top: 20px; }
-
-.product-price-btn p {
-  font-family: "Bodoni Moda", serif;
-  font-size: 28px;
-  font-weight: 800; }
-
-.product-price-btn button {
-  padding: 10px 30px;
-  border: 2px solid #4743b9;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #4743b9;
-  background-color: #ffffff; }
-
-.product-price-btn button:hover {
-  color: #ffffff;
-  background-color: #4743b9; }
-
-/* ------------------CONTACTO HTML----------------- */
 .form {
   margin-top: 10%;
   font-family: "Montserrat", sans-serif; }
+  .form__header h1 {
+    padding-bottom: 20px;
+    color: #4743b9; }
+  .form__info {
+    font-size: 16px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0; }
+    .form__info ::placeholder {
+      color: #a7a7a7;
+      font-size: 14px; }
+    .form__info :focus-visible {
+      border: 1.5px solid #4743b9;
+      outline: none; }
+  .form__field {
+    height: 45px;
+    padding: 0 16px;
+    border: solid #ffffff;
+    border-radius: 4px;
+    transition: 0.2s;
+    margin-top: 20px; }
 
-.form__header h1 {
-  padding-bottom: 20px;
-  color: #4743b9; }
-
-.form__info {
-  max-width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0; }
-  .form__info p {
-    margin: 18px 0;
-    text-align: right;
-    font-size: 12px; }
-  .form__info a {
-    color: #666666; }
-
-.form__field {
-  font-family: "Montserrat", sans-serif;
-  height: 46px;
-  padding: 0 16px;
-  border: solid #ffffff;
-  border-radius: 4px;
-  transition: 0.2s;
-  margin-top: 20px; }
+@media screen and (max-width: 768px) {
+  .form {
+    margin-top: 20%; } }
 
 /* ------------------AYUDA HTML----------------- */
 .help {
   margin-top: 10%; }
-
-.help__wrapper {
-  max-width: 600px;
-  width: 100%;
-  margin: 10vh auto; }
 
 .help__wrapper h1 {
   font-family: 'Bodoni Moda', serif;
@@ -341,7 +321,7 @@ footer {
   width: 100%;
   height: 50px;
   cursor: pointer;
-  border: 2px solid #7743B9;
+  border: 2px solid #726eeb;
   border-radius: 10px;
   user-select: none; }
 

@@ -1,8 +1,11 @@
-// nav
+//--------------- NAVEGATION --------------- //
 
 .navbar {
     background-color: #0d0d0dc4;
     font-size: 14px;
+    img{
+        width: 50%;
+    }
 }
 
 .navbar-nav{
@@ -20,4 +23,26 @@
         
 
     }
+}
+
+@media only screen and (max-width: $mediaTablet-768) {
+    .navbar {
+        background-color: #ffffffc4;
+    }
+    .navbar-nav li a {
+        color: #4743b9;
+        text-align: end;
+        font-weight: 500;
+    }
+    
+}
+
+@media only screen and (max-width: $mediaMobile-425) {
+    .navbar {
+        background-color: #ffffffc4;
+        img{
+            width: 40%; 
+        }
+    }
+    
 }

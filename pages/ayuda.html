@@ -29,12 +29,12 @@
     <!--Navegación-->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top menu">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand desk" href="../index.html">
-                    <img src="../assets/img/logo_tcrkl.svg" alt="Tickeralia logo" width="60%">
+                    <img src="../assets/img/logo_tcrkl.svg" alt="Tickeralia logo">
                 </a>
                 <a class="navbar-brand mobile" href="../index.html">
-                    <img src="../assets/img/logo_tcrkl_color.svg" alt="Tickeralia logo" width="60%">
+                    <img src="../assets/img/logo_tcrkl_color.svg" alt="Tickeralia logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,45 +70,61 @@
 
     <main>
 
-        <section class="help">
-
+        <section class="container help">
             <div class="help__wrapper">
-
-                <h1>Ayuda / Preguntas frecuentes</h1>
-
-                <div class="wrap__1">
-                    <input type="radio" id="tab-1" name="tabs">
-                    <label for="tab-1">
-                        <div>¿Esta es una pregunta 1?</div>
-                        <div class="help__cross"></div>
-                    </label>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores, sapiente nobis eos, qui maxime obcaecati, ipsum repellat quod nisi nulla <b> sint quibusdam cupiditate deserunt omnis incidunt alias id nemo? Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Ratione minima laborum consectetur mollitia corrupti voluptatibus eveniet facere id adipisci perspiciatis quos, eos veritatis repellat dolores voluptatum dolorum quaerat deleniti architecto. 
-                        </p>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-8">
+                        <h1>Ayuda / Preguntas frecuentes</h1>
                     </div>
                 </div>
 
-                <div class="wrap__2">
-                    <input type="radio" id="tab-2" name="tabs">
-                    <label for="tab-2">
-                        <div>¿Aquí hay una pregunta 2?</div>
-                        <div class="help__cross"></div>
-                    </label>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempora non quidem eaque consequuntur tenetur illum nam repudiandae asperiores officia? Fugiat debitis voluptatibus dolore, laudantium iusto laborum molestiae iste magni! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b> At suscipit harum soluta mollitia atque esse a odio quia iste earum.</b> Officiis ut deserunt asperiores laborum perspiciatis mollitia, ratione aut? Omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, incidunt sunt officiis voluptatem expedita obcaecati pariatur dicta ullam quod iste asperiores non, qui repellat assumenda quas at! Odio, voluptatem error?
-                        </p>
-                    </div>
-                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-6">
+                        <div class="wrap__1">
+                            <input type="radio" id="tab-1" name="tabs">
+                            <label for="tab-1">
+                                <div>¿Qué es Tickeralia?</div>
+                                <div class="help__cross"></div>
+                            </label>
+                            <div class="content">
+                                <p>Tickeralia es el primer servicio donde puedes pagar de manera fácil, rápida y en tiempo real tus entradas a eventos, discotecas, conciertos y mucho más.
 
-                <div class="wrap__3">
-                    <input type="radio" id="tab-2" name="tabs">
-                    <label for="tab-2">
-                        <div>¿Aquí hay una pregunta 2?</div>
-                        <div class="help__cross"></div>
-                    </label>
-                    <div class="content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim, rem quisquam perferendis ullam maxime corrupti vero. <b> Obcaecati aspernatur provident nam ratione ullam aut possimus ex accusantium omnis, magnam temporibus.</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error architecto amet omnis quisquam perspiciatis magni reprehenderit eaque! Repellendus tempore unde quod maxime animi pariatur voluptas nobis iste dolorum perferendis! Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nam beatae esse aut nesciunt earum quis asperiores exercitationem, quo in sapiente facere commodi! Quisquam ut neque eum itaque optio molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dicta tenetur placeat adipisci repellendus quo ratione sit nostrum. Tenetur accusamus commodi quasi non culpa asperiores unde doloremque modi quo autem.
-                        </p>
+                                La aplicación te permite revisar de manera rápida los distintos eventos, todos georreferenciados según tu ubicación o interés. Ya no más filas de espera para comprar tus entradas mientras te pierdes toda la entretención.
+                                    
+                                Tickeralia es una aplicación social que permite publicar todo tipo de eventos y generar una ticketera online. Además agrupa todos los eventos en un solo lugar para que asi sea más cómoda y expedita la venta de entradas.
+                                    
+                                Bajo la perspectiva de desarrollo social, permite dinamizar y fortalecer el apoyo al emprendimiento y la cultura promoviendo la difusión de eventos y exposiciones en espacios públicos y privados. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="wrap__2">
+                            <input type="radio" id="tab-2" name="tabs">
+                            <label for="tab-2">
+                                <div>¿Cómo compro una entrada?</div>
+                                <div class="help__cross"></div>
+                            </label>
+                            <div class="content">
+                                <p>Para comprar tus entradas a eventos es muy simple, solo debes encontrar tu panorama favorito e ingresar a la ficha del evento.
+
+                                Dentro de la ficha debes seleccionar el tipo de entrada que quieres, seleccionar la cantidad de tickets y apretar el botón COMPRAR.
+                                    
+                                Luego debes seguir las instrucciones del Carro de Compra.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="wrap__3">
+                            <input type="radio" id="tab-3" name="tabs">
+                            <label for="tab-3">
+                                <div>¿Dónde recibo mis entradas?</div>
+                                <div class="help__cross"></div>
+                            </label>
+                            <div class="content">
+                                <p>Una vez que tu compra ha sido validada por Transbank y Tickeralia las entradas estarán disponibles en tu cuenta de usuario Tickeralia y en tu correo electrónico en nuestro formato eTicket Digital.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,7 +172,7 @@
 
         <div class="row justify-content-center footer__level2">
             <div class="col-10 text-center">
-                <p class="copyright"> © Marca, Inc. Todos los derechos reservados | © 2001-2022  <a href="https://colorlib.com" target="_blank">Tickeralia.com</a>
+                <p class="copyright"> © Marca, Inc. Todos los derechos reservados | © 2001-2022  <a href="https://www.google.com/" target="_blank">Tickeralia.com</a>
                 </p>
             </div>
         </div>

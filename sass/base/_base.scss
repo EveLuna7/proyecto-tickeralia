@@ -8,51 +8,27 @@ p {
     margin-bottom: 0 !important;
 }
 
-.mobile{
-    display: none;
+.mobile{ 
+	display: none;
+}
+.desk{
+	display: block;
 }
 
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: $mediaTablet-768) {
     .desk{
         display: none;
     }
-    .mobile{
-        display: inline-block;
+    .mobile {
+        display: block;
     }
-    .navbar {
-        background-color: #ffffffc4;
-    }
-    .navbar-nav li a {
-        color: #4743b9;
-        text-align: end;
-        font-weight: 500;
-    }
-    form{
-        justify-content: flex-end;
-    }
+   
     .carousel {
         margin-top: 58px;
     }
     .search__container {
         margin-top: 25%;
     }
-    footer {
-        padding: 3rem 0 2rem 0;
-    }
-    .footer__tick {
-        text-align: left;
-    }
-    .footer__heading img{
-        width: 45%;
-    }
-    .footer__menu ul{
-        list-style:none;
-        display: inline-block;
-    }
-    .footer__rrss img{
-        width: 20px;
-        margin: 15px;
-    }
-    
+  
 }

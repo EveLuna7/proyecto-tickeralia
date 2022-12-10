@@ -1,21 +1,31 @@
-.btn__inside {
-    background-color: $purple-base;
-    border: none;
-    border-radius: 20px;
-    color: $white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
+@mixin buttons($bgcolor, $brderpx, $brdertype, $brderclor, $bradius, $clor, $padx, $pady, $txt-align, $txt-deco, $fnt-size, $spacing, $fnweight){
+
+    background-color: $bgcolor;
+    border: $brderpx $brdertype $brderclor;
+    border-radius: $bradius;
+    color: $clor;
+    padding: $padx $pady;
+    text-align: $txt-align;
+    text-decoration: $txt-deco;
+    font-size: $fnt-size;
+    letter-spacing: $spacing;
+    font-weight: $fnweight;
 }
 
+.btn__inside {
+    @include buttons($purple-base, 1px, solid, $purple-base, 20px, $white, 8px, 30px, center, none, 13px, 1px, 500);
+    &:hover{
+        color: $white;
+        background-color: $purple-light;
+        border: 1px solid $purple-light;
+    }
+}
+
+
 .btn__outside {
-    background-color: $white;
-    border: 2px solid $purple-base;
-    border-radius: 20px;
-    color: $purple-base;
-    padding: 8px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
+    @include buttons($white, 1px, solid, $purple-base, 20px, $purple-base, 8px, 30px, center, none, 13px, 1px, 500);
+    &:hover{
+        color: $white;
+        background-color: $purple-base;
+    }
 }

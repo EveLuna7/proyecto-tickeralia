@@ -2,11 +2,19 @@
 $white: #ffffff;
 $grayish-white: #f5f5f5;
 $gray-medium:#a7a7a7;
+$gray-medium-strong: #6c6c6c;
+$gray-heavy: #3a3a3a;
+$black: #111111;
 $purple-base: #4743b9;
-$purple-light: #605bdf;
+$purple-light: #726eeb;
 $pink-salmon: #ff8b88;
 
 
 // typography
 $font-montserrat: 'Montserrat', sans-serif;
 $font-bodoni: 'Bodoni Moda', serif;
+$font-bold: 900;
+
+// breakpoints
+$mediaMobile-425: 425px;
+$mediaTablet-768: 768px;
